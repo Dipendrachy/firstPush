@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <h5>
+        This is me!!
+    </h5>
+    <style>
+        .container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+        }
+        .btn-container {
+            display: flex;
+            gap: 50px; /* Adds spacing between buttons */
+            margin-top: 10px;
+        }
+       
+        img {
+            width: 100px;
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>What Can JavaScript Do?</h2>
+
+        <p>JavaScript can change HTML attribute values.</p>
+        <p>In this case, JavaScript changes the value of the <code>src</code> (source) attribute of an image.</p>
+
+        <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Light Bulb">
+
+        <div class="btn-container">
+            <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">
+                Turn on the light
+            </button>
+            <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">
+                Turn off the light
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
